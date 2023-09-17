@@ -1,0 +1,316 @@
+body {
+    background-color: black;
+    background-image: url(assets/Background.gif);
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.outlined-title {
+    display: block;
+    margin-top: -0.1%;
+    margin-left: 1%;
+    font-size: 2.1rem;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: #fff 0.1rem;
+    letter-spacing: 0.2rem;
+    color: transparent;
+    position: relative;
+    animation: flickering 2s linear infinite both;
+    text-shadow: 0px 0px 16px #FEC195;
+    cursor: pointer;
+  }
+  
+  .outlined-title span::before,
+  .outlined-title span::after {
+    content: '—';
+  }
+
+  @keyframes flickering {
+    0%,
+    100% {
+      opacity: 1;
+    }
+  
+    41.99% {
+      opacity: 1;
+    }
+  
+    42% {
+      opacity: 0;
+    }
+  
+    43% {
+      opacity: 0;
+    }
+  
+    43.01% {
+      opacity: 1;
+    }
+  
+    47.99% {
+      opacity: 1;
+    }
+  
+    48% {
+      opacity: 0;
+    }
+  
+    49% {
+      opacity: 0;
+    }
+  
+    49.01% {
+      opacity: 1;
+    }
+  }
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    width: 100.5%;
+    margin-left: -0.5%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #8f8f8f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 1%;
+    margin-left: 2%;
+  }
+
+  .topnav .navbarleft {
+    float: right;
+    display: block;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 1%;
+    margin-left: 2%;
+    scale: 1.5;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .topnav .pop:hover {
+    scale: 1.7;
+  }
+
+  .topnav .myico {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 20px 16px;
+    
+  }
+
+  .topnav .dropdown {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    cursor: pointer;
+    margin-left: 2%;
+    margin-top: 0.2%;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: white;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  .bg-limiter {
+    width: 101%;
+    height: 900px;
+    margin-left: -0.5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .myico {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .topnav.responsive .dropdown {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: #8f8f8f;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    position: relative;
+    margin-top: 1%;
+    margin-left: 2%;
+    cursor: pointer;
+  }
+
+  .dropdown .dropbtn:hover {
+    color: white;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: lightpink;
+    color: black;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .middle {
+    width: 90%;
+    display: block;
+    position: relative;
+    margin-top: 200px;
+    text-align: left;
+    margin-left: auto;
+    height: auto;
+  }
+
+  .middle h1 {
+    color: #f1f1f1;
+    font-size: 48px;
+    /* text-shadow: 2px 2px #000000; */
+  }
+
+  .middle h2 {
+    color: #f1f1f1;
+    font-size: 28px;
+    font-weight: 100;
+  }
+
+  .middle .download {
+    background: lightpink;
+    border: none;
+    border-radius: 7px;
+    margin-top: 100px;
+    cursor: pointer;
+    max-width: 180%;
+    max-height: 100%;
+    width: 250px;
+    height: 70px;
+    font-size: 150%;
+    text-align: center;
+    float: left;
+    
+  }
+  
+  .middle .premium {
+    background: rgba(0, 0, 0, 0);
+    color: #f1f1f1;
+    border: 1px solid gray;
+    border-radius: 7px;
+    margin-top: 100px;
+    cursor: pointer;
+    max-width: 180%;
+    max-height: 100%;
+    width: 250px;
+    height: 70px;
+    font-size: 130%;
+    text-align: center;
+    margin-left: 1%;
+  }
+
+  .middle .premium:hover {
+    border: 1px solid white;
+  }
+
+  .middle .download:hover {
+    color: #000000;
+    background-color: white;
+  }
+
+  .download-nav {
+    border: none;
+    border-radius: 5px;
+    background-color: lightpink;
+    height: 30px;
+    max-height: 30px;
+    cursor: pointer;
+  }
+
+  .download-nav:hover {
+    color: black;
+    background-color: wheat;
+  }
