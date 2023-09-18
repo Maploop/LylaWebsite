@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="topnav" id="myTopnav">
+    <div class="topnav" id="navbar">
         <div onclick="mainPage()" id="lyla-logo" class="outlined-title myico"><span> L Y L A </span></div>
       <a href="/news">News</a>
       <a href="/product">Product</a>
-      <a href="/features">Features</a>
+      <a href="#features">Features</a>
 
       <div class="dropdown">
         <button class="dropbtn">Learn
@@ -50,6 +50,72 @@
 
         <button class="download"><i class="fab fa-windows"></i> Download for PC</button>
         <button class="premium">Learn about Enterprise</button>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-header card-image">
+          <img src="assets/img-dev.avif">Developer Program Update</img>
+        </div>
+        <div class="card-body">
+          Our Developer program recently had an update to benefit programmers in usage of our API.
+        </div>
+        <div class="card-footer">
+          <div class="card-date">September 18, 2023</div>
+          <div class="card-comments"><i class="fas fa-comment"></i> 0</div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-header card-image">
+          <img src="https://source.unsplash.com/">Web API Roadmap</img>
+        </div>
+        <div class="card-body">
+          Our WEB Api is in the works! Click to check out the roadmap.
+        </div>
+        <div class="card-footer">
+          <div class="card-date">September 18, 2023</div>
+          <div class="card-comments"><i class="fas fa-comment"></i> 0</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="features" class="features-section">
+      <h1>Your workflow just got faster</h1>
+      <h2>Lyla comes with significant improvements to your daily life by eliminating</h2>
+      <h2>all of your small annoying tasks for you.</h2>
+
+      <a>View release notes <i class="fa-solid fa-arrow-right"></i></a>
+
+      <div class="feature-list">
+
+        <div class="feature">
+          <div class="title">
+            <div class="title-icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="title-text">Easy Setup</div>
+          </div>
+          <div class="desc">An easy automated setup feature so you can run many instances of Lyla at once!</div>
+        </div>
+
+        <div class="feature">
+          <div class="title">
+            <div class="title-icon"><i class="fa-solid fa-computer"></i></div>
+            <div class="title-text">Tech</div>
+          </div>
+          <div class="desc">Lyla uses the latest versions of Deepgram and OpenAI in order to make things easier for you.</div>
+        </div>
+
+        <div class="feature">
+          <div class="title">
+            <div class="title-icon"><i class="fa-solid fa-server"></i></div>
+            <div class="title-text">In-House API</div>
+          </div>
+          <div class="desc">Ability to have as many instances of our in-house API locally hosted.</div>
+        </div>
+
+      </div>
+
     </div>
 
     <!-- <div onclick="mainPage()" id="lyla-logo" class="outlined-title"><span> L Y L A </span></div> -->
